@@ -1,0 +1,41 @@
+
+1. Covid19_2.java vs. SparkCovid19_1.java 
+
+    Spark Task 1 took 2772milliseconds
+    Spark Task 1 took 3313milliseconds
+    Spark Task 1 took 2785milliseconds
+    Spark Task 1 took 2716milliseconds
+    Spark Task 1 took 2684milliseconds
+    Average - 2854
+
+    Hadoop Task 2 took 3420milliseconds
+    Hadoop Task 2 took 3224milliseconds
+    Hadoop Task 2 took 3192milliseconds
+    Hadoop Task 2 took 2997milliseconds
+    Hadoop Task 2 took 2909milliseconds
+    Average - 3148
+
+3. Covid19_3.java vs. SparkCovid19_2.java 
+
+    Spark Task 2 took 2733milliseconds
+    Spark Task 2 took 2819milliseconds
+    Spark Task 2 took 3100milliseconds
+    Spark Task 2 took 3003milliseconds
+    Spark Task 2 took 2695milliseconds
+    Average - 2870
+
+    Hadoop Task 3 took 3388milliseconds
+    Hadoop Task 3 took 3363milliseconds
+    Hadoop Task 3 took 3261milliseconds
+    Hadoop Task 3 took 3149milliseconds
+    Hadoop Task 3 took 3360milliseconds
+    Average - 3304
+
+***************************************************
+Results - 
+For task 2, "find death count in range of dates"
+Spark is 9.3% faster than Hadoop MR
+
+For task 3, "find the cases per million population"
+Spark is 13.1% faster than Hadoop MR
+***************************************************

@@ -1,0 +1,77 @@
+
+*** NOTE ***
+    The assignment is completed on a hadoop and spark installation on a local computer (MacBook).
+    To install and setup hadoop and spark, please follow - 
+    https://www.datageekinme.com/setup/setting-up-my-mac-hadoop/ , 
+    https://medium.com/beeranddiapers/installing-apache-spark-on-mac-os-ce416007d79f
+
+*** ENVIRONMENT ***
+    1. macOS - 10.15.3
+    2. Visual Studio Code - 1.42.1
+    3. javac - 1.8.0_242 (version 7)
+    4. Hadoop  - 3.1.1
+    5. Spark - 2.4.5
+
+*** BUILD INSTRUCTIONS ***
+
+*Hadoop:
+    1. run: ./clean.sh, to delete the stale jar and class files
+    2. compile: example javac7 -cp `hadoop classpath` Covid19_3.java -d  build -Xlint
+    3. create jar file: jar -cvf Covid19.jar -C build/ .
+    4. run hadoop job - 
+        4.1 Task1: hadoop jar Covid19.jar Covid19_1 /cse532/input/covid19_full_data.csv false /cse532/output/                
+        4.1 Task2: hadoop jar Covid19.jar Covid19_2 /cse532/input/covid19_full_data.csv 2020-03-29 2020-03-30 /cse532/output/
+        4.3 Task3: hadoop jar Covid19.jar Covid19_3 /cse532/input/covid19_full_data.csv hdfs://localhost:9000/cse532/cache/populations.csv  /cse532/output/
+        (note that task 3 takes the full path name, including localhost:portnumber)
+
+*Spark:
+    1. run: ./clean.sh, to delete the stale jar and class files
+    2. compile: example javac7 -cp "/usr/local/Cellar/apache-spark/2.4.5/libexec/jars/*:" SparkCovid19_1.java -d  build -Xlint
+    3. create jar file: jar -cvf SparkCovid19.jar -C build/ .
+    4. run Spark job -       
+        4.1 Task1: spark-submit --class SparkCovid19_1 SparkCovid19.jar /cse532/input/ 2019-01-02 2021-04-07 /cse532/output/
+        4.3 Task2: spark-submit --class SparkCovid19_2 SparkCovid19.jar /cse532/input/ hdfs://localhost:9000/cse532/cache/populations.csv /cse532/output/
+        (note that task 3 takes the full path name, including localhost:portnumber)
+*hdfs
+    1. List folder: hdfs dfs -ls /cse532/output
+    2. Remove Directory: hdfs dfs -rm -r /cse532/input
+    3. Make directory: hdfs dfs -mkdir /cse532/input
+    4. For extensive list, please refer to : https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-common/FileSystemShell.html
+
+*** VERIFICATION ***
+
+    1.  Randomly selected countries from the covid19_full_data files and counted cases.
+        The counted cases matched for the Hadoop job ouputs.
+        This was verfied with "true" and "false" flags which includes and excludes word+international data.
+    2.  Randomly selected countries from the covid19_full_data files and counted deaths within a given date range.
+        The counted death matched for the Spark and Hadoop job ouputs
+    3.  Randomly selected countries from the covid19_full_data files and counted cases in that country.
+        Divided the cases with the country population and multiplied by 1e6.
+        The number matched the Spark and Hadoop outputs.
+    4. For task 1 and 2, ran with different date ranges, from 1 day (2020-03-03, 2020-03-03) to entire range (2020-01-01)
+        (2020-04-08), counted the number of cases for random country. The cases matched the Spark/Hadoop outputs.
+    5. Verified cases/million from https://www.worldometers.info/coronavirus/
+
+*** DATE HANDLING IN PART 2 HADOOP MR ***
+
+    Following conditions are covered for the date in Part 2 of the HadoopMR assignment
+    1. "Start Dates is after end date", when start date is after end date
+    2. "Dates are invalid", when dates are malformed and not in yyyy-MM-dd order
+    3. "Start Dates or/and end date are out of range", if start end date is not in 2020-01-01 and 2020-04-08, inclusive 
+
+*** CODE FILES ***
+    1. Covid19_1.java - hadoop java file for task1
+    2. Covid19_2.java - hadoop java file for task2
+    3. Covid19_3.java - hadoop java file for task3
+    4. SparkCovid19_1.java - spark java file for task1
+    4. SparkCovid19_2.java - spark java file for task2
+
+*** RESULT/OUTPUT FILES ***
+    1. README - this file 
+    2. ./Covid19_1 - folder containing screenshot/output etc.
+    3. ./Covid19_2 - folder containing screenshot/output etc.
+    4. ./Covid19_3 - folder containing screenshot/output etc.
+    5. ./SparkCovid19_1 - folder containing screenshot/output etc.
+    6. ./SparkCovid19_2 - folder containing screenshot/output etc.
+    7. Performance.txt - performance comparison spark/hadoop MR
+    

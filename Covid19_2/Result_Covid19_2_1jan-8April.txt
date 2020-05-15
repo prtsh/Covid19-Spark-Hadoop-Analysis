@@ -1,0 +1,205 @@
+Afghanistan	11
+Albania	22
+Algeria	194
+Andorra	22
+Angola	2
+Anguilla	0
+Antigua and Barbuda	0
+Argentina	60
+Armenia	8
+Aruba	0
+Australia	45
+Austria	243
+Azerbaijan	8
+Bahamas	6
+Bahrain	5
+Bangladesh	17
+Barbados	3
+Belarus	13
+Belgium	2035
+Belize	1
+Benin	1
+Bermuda	2
+Bhutan	0
+Bolivia	15
+Bonaire Sint Eustatius and Saba	0
+Bosnia and Herzegovina	32
+Botswana	1
+Brazil	667
+British Virgin Islands	0
+Brunei	1
+Bulgaria	23
+Burkina Faso	19
+Burundi	0
+Cambodia	0
+Cameroon	9
+Canada	380
+Cape Verde	1
+Cayman Islands	1
+Central African Republic	0
+Chad	0
+Chile	43
+China	3337
+Colombia	50
+Congo	5
+Costa Rica	2
+Cote d'Ivoire	3
+Croatia	18
+Cuba	11
+Curacao	1
+Cyprus	14
+Czech Republic	88
+Democratic Republic of Congo	18
+Denmark	203
+Djibouti	0
+Dominica	0
+Dominican Republic	98
+Ecuador	220
+Egypt	85
+El Salvador	4
+Equatorial Guinea	0
+Eritrea	0
+Estonia	21
+Ethiopia	2
+Faeroe Islands	0
+Falkland Islands	0
+Fiji	0
+Finland	34
+France	10328
+French Polynesia	0
+Gabon	1
+Gambia	1
+Georgia	3
+Germany	1861
+Ghana	5
+Gibraltar	1
+Greece	81
+Greenland	0
+Grenada	0
+Guam	4
+Guatemala	3
+Guernsey	4
+Guinea	0
+Guinea-Bissau	0
+Guyana	5
+Haiti	1
+Honduras	22
+Hungary	58
+Iceland	6
+India	149
+Indonesia	221
+International	7
+Iran	3872
+Iraq	64
+Ireland	210
+Isle of Man	1
+Israel	65
+Italy	17129
+Jamaica	3
+Japan	80
+Jersey	3
+Jordan	6
+Kazakhstan	6
+Kenya	6
+Kosovo	5
+Kuwait	1
+Kyrgyzstan	4
+Laos	0
+Latvia	2
+Lebanon	19
+Liberia	3
+Libya	1
+Liechtenstein	1
+Lithuania	15
+Luxembourg	44
+Macedonia	26
+Madagascar	0
+Malawi	1
+Malaysia	63
+Maldives	0
+Mali	5
+Malta	0
+Mauritania	1
+Mauritius	7
+Mexico	141
+Moldova	22
+Monaco	2
+Mongolia	0
+Montenegro	2
+Montserrat	0
+Morocco	90
+Mozambique	0
+Myanmar	1
+Namibia	0
+Nepal	0
+Netherlands	2101
+New Caledonia	0
+New Zealand	1
+Nicaragua	1
+Niger	11
+Nigeria	6
+Northern Mariana Islands	2
+Norway	69
+Oman	2
+Pakistan	58
+Palestine	1
+Panama	59
+Papua New Guinea	0
+Paraguay	5
+Peru	107
+Philippines	177
+Poland	129
+Portugal	345
+Puerto Rico	23
+Qatar	6
+Romania	182
+Russia	58
+Rwanda	0
+Saint Kitts and Nevis	0
+Saint Lucia	0
+Saint Vincent and the Grenadines	0
+San Marino	34
+Saudi Arabia	41
+Senegal	2
+Serbia	61
+Seychelles	0
+Sierra Leone	0
+Singapore	6
+Sint Maarten (Dutch part)	8
+Slovakia	2
+Slovenia	36
+Somalia	0
+South Africa	13
+South Korea	200
+South Sudan	0
+Spain	13798
+Sri Lanka	6
+Sudan	2
+Suriname	1
+Swaziland	0
+Sweden	591
+Switzerland	641
+Syria	2
+Taiwan	5
+Tanzania	1
+Thailand	30
+Timor	0
+Togo	3
+Trinidad and Tobago	8
+Tunisia	22
+Turkey	725
+Turks and Caicos Islands	1
+Uganda	0
+Ukraine	45
+United Arab Emirates	12
+United Kingdom	6159
+United States	12895
+United States Virgin Islands	1
+Uruguay	7
+Uzbekistan	2
+Vatican	0
+Venezuela	7
+Vietnam	0
+World	81478
+Zambia	1
+Zimbabwe	1
